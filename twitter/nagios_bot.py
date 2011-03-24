@@ -90,7 +90,6 @@ def alert(token_key,token_secret,consumer_key,consumer_secret,update):
     data = {'status': update[:140]}
     resp, content = client.request(request_uri, 'POST', urllib.urlencode(data))
 
-    print token
     print resp
    
 
